@@ -49,7 +49,7 @@ public class PetRepository {
             return pet;
         }
 
-        // Чтение всех продуктов из БД
+        // Чтение всех животных из БД
         public List<Pet> findAll() throws IOException {
             try {
                 Pet[] pets = mapper.readValue(database, Pet[].class);
@@ -60,7 +60,7 @@ public class PetRepository {
             }
         }
 
-        // Чтение одного продукта по id
+        // Чтение одного животного по id
         public Pet findById(int id) throws IOException {
             return findAll().
                     stream()
@@ -69,8 +69,7 @@ public class PetRepository {
                     .orElse(null);
         }
 
-        // Обновление существующего продукта
-        // этот метод будет менять только цену продукта
+        // Обновление существующего животного
         public void update(Pet pet) throws IOException {
             int id = pet.getId();
 
@@ -94,7 +93,7 @@ public class PetRepository {
             mapper.writeValue(database, pets);
         }
 
-        // Удаление продукта
+        // Удаление животного
         public void deleteById(int id) throws IOException {
             List<Pet> pets = findAll();
             pets.removeIf(x -> x.getId() == id);

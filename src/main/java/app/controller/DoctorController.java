@@ -18,7 +18,7 @@ public class DoctorController {
     }
 
     public Doctor save(String name) throws IOException, DoctorSaveException {
-        Doctor doctor = new Doctor(name); // предполагаю, что у тебя есть конструктор Doctor(String name)
+        Doctor doctor = new Doctor(name);
         return service.save(doctor);
     }
 
@@ -31,7 +31,7 @@ public class DoctorController {
     }
 
     public void update(int id, String name) throws IOException, DoctorSaveException {
-        Doctor doctor = new Doctor(id, name); // предполагаю конструктор Doctor(int id, String name)
+        Doctor doctor = new Doctor(id, name);
         service.update(doctor);
     }
 

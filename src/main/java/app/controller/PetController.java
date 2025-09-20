@@ -18,7 +18,7 @@ public class PetController {
     }
 
     public Pet save(String name, String species, String ownerName) throws IOException, PetSaveException {
-        Pet pet = new Pet(name, species, ownerName); // предполагаю конструктор Pet(String name, String species, String ownerName)
+        Pet pet = new Pet(name, species, ownerName);
         return service.save(pet);
     }
 
@@ -31,7 +31,7 @@ public class PetController {
     }
 
     public void update(int id, String name, String species, String ownerName) throws IOException, PetUpdateException {
-        Pet pet = new Pet(id, name, species, ownerName); // предполагаю конструктор Pet(int id, String name, String species, String ownerName)
+        Pet pet = new Pet(id, name, species, ownerName);
         service.update(pet);
     }
 

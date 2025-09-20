@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "name": "Барсик",
-    "ownerName": "Сидоров Алексей",
-    "species": "Кот",
+    "name": "Пяточка",
+    "ownerName": "Чхан Елена",
+    "species": "Кошка",
     "active": true
   },
   {
     "id": 2,
-    "name": "Шарик",
-    "ownerName": "Кузнецова Мария",
-    "species": "Собака",
+    "name": "Лапа",
+    "ownerName": "Чхан Елена",
+    "species": "Кошка",
     "active": true
   }
 ]

@@ -44,7 +44,6 @@ public class Client {
         }
     }
 
-    // ====== операции с докторами ======
     public static void doctorOperations() {
         while (true) {
             try {
@@ -134,7 +133,7 @@ public class Client {
         }
     }
 
-    // ====== операции с питомцами ======
+
     public static void petOperations() {
         while (true) {
             try {
