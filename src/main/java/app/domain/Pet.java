@@ -12,6 +12,19 @@ public class Pet {
     public Pet() {
     }
 
+    public Pet(String name, String species, String ownerName) {
+        this.name = name;
+        this.species = species;
+        this.ownerName = ownerName;
+    }
+
+    public Pet(int id, String name, String species, String ownerName) {
+        this.id = id;
+        this.name = name;
+        this.species = species;
+        this.ownerName = ownerName;
+    }
+
     public Pet(int id, String name, String species, boolean active, String ownerName) {
         this.id = id;
         this.name = name;

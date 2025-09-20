@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Барсик",
+    "ownerName": "Сидоров Алексей",
+    "species": "Кот",
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Шарик",
+    "ownerName": "Кузнецова Мария",
+    "species": "Собака",
+    "active": true
+  }
+]
